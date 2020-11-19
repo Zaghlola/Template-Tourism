@@ -1,3 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
-    //alert("h5a")
+    if(localStorage.getItem("sights")){
+        const sights = localStorage.getItem("sights")
+        
+    }
 })

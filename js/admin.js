@@ -3,6 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".create-content-button").addEventListener("click", () => {
         const name = document.querySelector(".content-sight-name").value
         const description = document.querySelector(".content-description").value
+        if (!name || !description) {
+            alert("Please, provide at least a sight name and a description")
+            return false;
+        }
         if (!localStorage.getItem("sights")) {
             let sights = []
             let sightsObj = { sights: sights }
