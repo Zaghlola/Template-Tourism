@@ -10,9 +10,13 @@ document.addEventListener("DOMContentLoaded", () => {
             localStorage.setItem("sights", JSON.stringify(sightsObj))
             console.log(localStorage.getItem("sights"))
         }
-
-        console.log("old items")
-        console.log(localStorage.getItem("sights"))
+        else {
+            let oldSights = JSON.parse(localStorage.getItem("sights"))
+            oldSights.sights.push({ name: name, description: description })
+            localStorage.setItem("sights", JSON.stringify(oldSights))
+            console.log("old items")
+            console.log(JSON.parse(localStorage.getItem("sights")))
+        }
 
     })
 

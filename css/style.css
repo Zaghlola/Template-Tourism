@@ -308,5 +308,22 @@ font-weight:700;
     color: #CC9;
 }
 
+.font-css {
+	color: white;
+	margin: 0.5em;
+	padding: 0.5em;
+  }
+  
+  .container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+  }
+  
+  .flex-column {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+  }
 /***end footer***/
 	
