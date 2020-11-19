@@ -1,0 +1,146 @@
+@charset "utf-8";
+body{ margin:0px;
+color:#545457/*#67676c*/; box-sizing:border-box;}
+.navbar {backgroud:rgba(153,153,153,1);
+text-align:center;
+z-index:30;
+position:absolute; 
+width:100%;
+height:50px;
+font-size:25px; 
+font-weight:800;
+
+}
+.navbar ul{
+	display:inline-flex;
+	list-style:none;
+	color:#000;
+	}
+	.navbar .fa {overflow: hidden;
+		margin-right:8px;}
+	.navbar ul li {
+		float:right;
+		width:150px;
+		margin:15px;
+		padding:15px;
+		padding-top:0px;}
+	.navbar ul li a {
+		text-decoration:none;
+	color:#CC9;}	
+
+.backgroundVideo{
+	position:fixed;
+	width:100vW;
+	top:0;
+	left:0;
+	z-index:10;
+	overflow:hidden;}
+	.backgroundVideo .videoContent{
+		object-fit: cover;
+		min-height:100vh;
+		width:100%}
+.backgroundVideo .videoLayer {
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    background-image: linear-gradient(to right, #131530 40%, rgba(19, 21, 30, 0.1));
+}
+.headerBox {
+    position: absolute;
+    width: 28.125vw;
+    height: 44.2vh;
+    top: 19.6vh;
+    left: 10vw;
+    z-index: 39;
+    background-image: linear-gradient(to top, #848587, #848587), linear-gradient(to right, #848587 17%, #f4f4f4 37%, #a7a7a7 55%, #cfd0d2 80%), linear-gradient(to bottom, #d2d3d5 15%, transparent 15.79%, transparent), linear-gradient(to right, #848587 10%, #f4f4f4 30%, #a7a7a7 50%, #cfd0d2 80%, transparent 80.37%);
+    background-position: bottom left, top left, top right, bottom right;
+    background-size: 0;
+    background-repeat: no-repeat;}
+.headerBox .startJourney {
+	/*color:#633797;*/
+	text-align:center;
+    position:absolute; 
+    width: 380px;
+    height: 250px;
+	top:100px;
+	left:350px;
+    
+    z-index:70;animation: slide-fade-in 3.5s 1.5s forwards;
+    background-image:url(../imag/discoverSlideWorldmap.png);
+    /*background-position: 50% 70%;
+    background-size: cover;
+     opacity: 0;
+    animation: slide-fade-in 3.5s 1.5s forwards;*/
+    color: #131550;
+   
+	
+}	
+.startJourney a {color:#633797;
+font-size:24px;
+	text-decoration:none;
+	}
+.startJourney h3{
+	padding-top:60px;
+	}	
+img {height: 100%;
+vertical-align: middle;
+    vertical-align: middle;
+    border-style: none;
+}
+ .imag1 {
+    height: 45vh;
+    top: 0;
+    left: 0;
+	position: absolute;
+    z-index: 30;		}
+	.imag2 {
+    height: 52vh;
+    bottom: -5vh;
+    left: -9vw;
+	position: absolute;
+    z-index: 30;
+
+}
+.imag3{height: 68vh;
+    bottom: -22vh;
+    left: 31vw;
+	position: absolute;
+    z-index: 30;}
+	
+	/***footer***/
+.footer{ width:100%;
+/*bottom:0;*/
+	position:fixed; 
+	height:70px; 
+	bottom:0px;
+	
+    padding-top: 20px;
+    text-align: center;
+    background-color:rgba(0,0,0,0.2);
+	z-index:60;
+    
+    padding-bottom: 20px;
+}
+.footer snap{ font-size:20px;
+font-weight:700;
+    padding-bottom: 20px;
+}
+.footer ul{ padding-right:55px;
+    padding-top: 15px;
+    
+    list-style: none;
+}
+.footer ul li{
+    display: inline-block;
+    padding-left: 35px;
+    
+}
+.footer ul li i{
+    color: #CC9;
+}
+
+/***end footer***/
+	
