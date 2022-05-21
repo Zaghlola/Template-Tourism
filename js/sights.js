@@ -18,6 +18,12 @@ document.addEventListener("DOMContentLoaded", () => {
             text.appendChild(header)
             text.appendChild(description)
 
+            // image
+            const img = document.createElement("img")
+            img.classList.add("sight-img")
+            img.src = sight.src
+
+            rink.appendChild(img)
             rink.appendChild(text)
 
             document.querySelector("div .con").appendChild(rink)
